@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root {
+  --font-primary: "Anek Telugu", sans-serif;
+  --font-secondary: "Montserrat Alternates", sans-serif;
+}
+
