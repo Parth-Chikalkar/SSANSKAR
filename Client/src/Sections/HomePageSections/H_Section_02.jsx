@@ -11,7 +11,7 @@ const H_Section_02 = () => {
   });
   
 
-  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const lineHeight = useTransform(scrollYProgress, [0, 2], ["20%", "100%"]);
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -25,7 +25,7 @@ const fadeUp = {
 };
 
   return (
-    <section className="relative w-full bg-[#050D0B] py-24 overflow-hidden">
+    <section className="relative w-full bg-gradient-to-b from-[#050D0B] via-[#050D0B] to-[#0A1F19] pt-24 pb-10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
 
 
@@ -103,7 +103,7 @@ const fadeUp = {
               className="
                 absolute
                 left-0
-                top-0
+                
                 w-[2px]
                 bg-green-400
                 rounded-full
@@ -173,7 +173,6 @@ const fadeUp = {
     "
   />
 
-
   <motion.img
   animate={{ y: [0, -10, 0] }}
   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
@@ -181,8 +180,6 @@ const fadeUp = {
     alt="Trading illustration"
     className="w-[420px] md:w-[764px]"
   />
-
-  
   <div
     className="
       absolute
