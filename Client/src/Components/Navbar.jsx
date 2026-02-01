@@ -49,12 +49,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <motion.button
-            whileHover={{ scale: 1.08 }}
-            className="bg-green-400 text-black font-medium px-6 py-2 rounded-lg shadow-lg"
-          >
-            Join Now
-          </motion.button>
+          
         </div>
 
         {/* Mobile Menu Button */}
@@ -95,15 +90,7 @@ const Navbar = () => {
               ))}
             </ul>
 
-            {/* CTA */}
-            <div className="mt-12 flex justify-center">
-              <motion.button
-                whileHover={{ scale: 1.08 }}
-                className="bg-green-400 text-black font-medium px-10 py-3 rounded-lg shadow-lg"
-              >
-                Join Now
-              </motion.button>
-            </div>
+           
           </motion.div>
         )}
       </AnimatePresence>

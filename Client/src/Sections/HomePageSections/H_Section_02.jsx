@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import illustration from "../../assets/Section_02.png";
-
+import illustration2 from  "../../assets/Section_02_bg.png"
 const H_Section_02 = () => {
   const skillsRef = useRef(null);
 
@@ -11,7 +11,7 @@ const H_Section_02 = () => {
   });
   
 
-  const lineHeight = useTransform(scrollYProgress, [0, 2], ["20%", "100%"]);
+  const lineHeight = useTransform(scrollYProgress, [0, 1], ["20%", "100%"]);
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -135,6 +135,9 @@ const fadeUp = {
               <li>Investment & Swing Trading Strategies</li>
               <li>Pure Price Action Chart Reading</li>
               <li>Futures & Options Knowledge</li>
+              <li>Risk Management & Position Sizing</li>
+              <li>Trading Psychology & Discipline</li>
+              <li>Market Analysis & Trade Planning</li>
             </ul>
           </div>
 
@@ -149,7 +152,7 @@ const fadeUp = {
       absolute
       w-[160px]
       h-[520px]
-      rotate-[-150deg]
+      rotate-[-130deg]
       rounded-[186.5px]
       bg-white/10
       border border-white/20
@@ -163,7 +166,7 @@ const fadeUp = {
       absolute
       w-[220px]
       h-[590px]
-      rotate-[-150deg]
+      rotate-[-130deg]
       rounded-[186.5px]
       bg-white/5
       border border-white/10
@@ -178,8 +181,16 @@ const fadeUp = {
   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
     src={illustration}
     alt="Trading illustration"
-    className="w-[420px] md:w-[764px]"
+    className="w-[20px] md:w-[364px]"
   />
+  <motion.img
+  animate={{ y: [0, -10, 0] }}
+  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+    src={illustration2}
+    alt="Trading illustration"
+    className="w-[420px] absolute top-30 right-[-50px] z-[-100] md:w-[764px]"
+  />
+
   <div
     className="
       absolute

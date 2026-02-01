@@ -88,7 +88,7 @@ function ServicesCards() {
           </h3>
 
           {/* Description */}
-          <p className="mt-4 text-sm font-light text-white/60 leading-relaxed">
+          <p className="mt-4 text-sm font-light text-white/60 leading-tight">
             {item.desc}
           </p>
         </motion.div>
