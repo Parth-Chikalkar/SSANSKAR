@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-// replace these with your actual images
 import a1 from "../../assets/Advisers/a1.png";
 import a2 from "../../assets/Advisers/a2.png";
 import a3 from "../../assets/Advisers/a3.png";
@@ -20,15 +19,11 @@ const advisers = [
 
 const container = {
   hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
+  visible: { transition: { staggerChildren: 0.15 } },
 };
 
 const card = {
-  hidden: { opacity: 0, y: 60, scale: 0.9 },
+  hidden: { opacity: 0, y: 60, scale: 0.94 },
   visible: {
     opacity: 1,
     y: 0,
@@ -46,8 +41,8 @@ function H_Section_06() {
       ref={ref}
       className="relative w-full bg-[#050D0B] py-20 overflow-hidden"
     >
-      {/* glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0E2C23]/60 to-transparent" />
+      {/* Background glow */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0E2C23]/60 to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Heading */}
@@ -55,7 +50,7 @@ function H_Section_06() {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center text-3xl md:text-5xl font-semibold text-white"
+          className="text-center text-3xl md:text-5xl font-semibold text-white font-['Anek_Telugu']"
         >
           Meet Our <span className="text-green-400">Advisers</span>
         </motion.h2>
@@ -86,17 +81,33 @@ function H_Section_06() {
                 rotateX: -6,
                 y: -12,
               }}
+              whileTap={{
+                scale: 0.97, // ✅ mobile interaction
+              }}
               transition={{ type: "spring", stiffness: 120 }}
               className="
-                group relative rounded-2xl
+                group
+                relative
+                rounded-2xl
                 bg-[#143024]
-                
                 p-6
                 perspective-[1000px]
+                shadow-[0_0_0_rgba(0,0,0,0)]
+                hover:border
+                hover:backdrop-blur-2xl
+                hover:shadow-2xl
+                
+                hover:border-green-400
               "
             >
               {/* Image */}
-              <div className="relative top-0 h-80  overflow-hidden rounded-xl">
+              <motion.div
+                initial={{ scale: 1.05 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="relative h-80 overflow-hidden rounded-xl"
+              >
                 <motion.img
                   src={item.img}
                   alt={item.name}
@@ -104,16 +115,19 @@ function H_Section_06() {
                   whileHover={{ scale: 1.08 }}
                   transition={{ duration: 0.6 }}
                 />
-              </div>
+              </motion.div>
 
               {/* Name Plate */}
               <div
-                
-                
                 className="
-                  absolute left-6 right-6 bottom-6  
-                  bg-white/75 rounded-xl
-                  text-center py-2
+                  absolute
+                  left-6
+                  right-6
+                  bottom-6
+                  bg-white/80
+                  rounded-xl
+                  text-center
+                  py-2
                 "
               >
                 <h4 className="font-semibold text-[#0E2C23]">
@@ -124,7 +138,7 @@ function H_Section_06() {
                 </p>
               </div>
 
-              {/* Idle floating */}
+              {/* Idle floating (desktop only feel, harmless on mobile) */}
               <motion.div
                 animate={{ y: [0, -6, 0] }}
                 transition={{
