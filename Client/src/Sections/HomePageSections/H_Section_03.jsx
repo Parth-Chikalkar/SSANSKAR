@@ -38,7 +38,7 @@ function H_Section_03() {
           transition={{ delay: 0.15 }}
           className="mt-4 text-white/60 max-w-xl mx-auto text-sm md:text-base"
         >
-          Where Serious Trading Education Begins
+          Empowering Traders Through Structured Professional Education
         </motion.p>
 
         {/* Cards */}

@@ -22,15 +22,16 @@ function Footer() {
           <div className="space-y-3 w-full lg:w-auto">
             <div className="flex items-center gap-2 text-emerald-400 text-xl font-semibold">
               <img src={img} className="rounded-full h-17 w-17" alt="logo" />
-              <span className="font-['Anek_Telugu'] font-semibold text-2xl">
+              <span className="font-['Anek_Telugu'] drop-shadow-[0_0_12px_rgba(34,197,94,0.6)] font-semibold text-2xl">
                 SSANSKAR
               </span>
             </div>
 
             <p className="text-sm leading-relaxed max-w-xs">
-              Welcome to our trading site! We offer the best, most affordable
-              products and services around. Shop now and start finding great
-              deals!
+            SSANSKAR Trading Academy delivers structured and practical 
+stock market education designed to build disciplined, confident, 
+and skilled traders. Our mission is to empower individuals with 
+real-world knowledge and long-term market success strategies.
             </p>
 
             <div className="flex gap-4 mt-8">
@@ -102,7 +103,7 @@ function Footer() {
 
         {/* Divider */}
         <div className="border-t border-white/10 mt-16 pt-6 text-center text-sm">
-          Copyright © 2023 designed by Thetork
+          © 2026 SSANSKAR Trading Academy. All Rights Reserved.
         </div>
       </div>
     </footer>

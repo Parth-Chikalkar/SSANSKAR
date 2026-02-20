@@ -104,10 +104,10 @@ const H_Section_01 = () => {
             viewport={{ once: true }}
             className="mt-6 text-white/70 max-w-xl mx-auto md:mx-0 text-sm sm:text-base leading-relaxed"
           >
-            Struggling to understand market movements? SSANSKAR offers structured
-            trading education, expert insights, and easy-to-follow lessons designed
-            for all levels. Learn how markets work and improve your decision-making
-            step by step!
+            Struggling to understand market movements? SSANSKAR provides structured 
+trading education, expert insights, and easy-to-follow lessons tailored 
+for learners at every level. Gain a clear understanding of how markets 
+work and enhance your decision-making skills step by step.
           </motion.p>
 
           {/* Buttons */}

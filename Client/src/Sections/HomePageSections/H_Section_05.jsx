@@ -2,12 +2,36 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 
 const steps = [
-  { id: 1, title: "Live Market Training", desc: "Participate in live market sessions with guidance." },
-  { id: 2, title: "Foundation (From Scratch)", desc: "Learn market fundamentals, no prior knowledge needed." },
-  { id: 3, title: "Practice", desc: "Apply concepts through practice, continuous learning." },
-  { id: 4, title: "Market Basics", desc: "Understand charts, price action, and market behavior." },
-  { id: 5, title: "Lifetime Learning Support", desc: "Doubt-clearing, community support, and guidance." },
-  { id: 6, title: "Strategy Building", desc: "Build skills in strategy planning and risk control." },
+  { 
+    id: 1, 
+    title: "Live Market Training", 
+    desc: "Participate in live market sessions with expert guidance and real-time insights." 
+  },
+  { 
+    id: 2, 
+    title: "Foundation (From Scratch)", 
+    desc: "Learn core market fundamentals with no prior knowledge required." 
+  },
+  { 
+    id: 3, 
+    title: "Practical Application", 
+    desc: "Apply concepts through structured practice and continuous learning." 
+  },
+  { 
+    id: 4, 
+    title: "Market Fundamentals", 
+    desc: "Develop a strong understanding of charts, price action, and market behavior." 
+  },
+  { 
+    id: 5, 
+    title: "Lifetime Learning Support", 
+    desc: "Receive ongoing doubt resolution, community support, and expert guidance." 
+  },
+  { 
+    id: 6, 
+    title: "Strategy Development", 
+    desc: "Build structured trading strategies with a focus on planning and risk management." 
+  },
 ];
 
 const H_Section_04 = () => {
@@ -53,7 +77,7 @@ const H_Section_04 = () => {
           transition={{ duration: 0.8 }}
           className="text-center font-['Anek_Telugu'] text-3xl md:text-5xl font-semibold text-white"
         >
-          From Beginner To Confident Trader{" "}
+          Your Journey from Beginner to Confident Trader{" "}
           <span className="text-green-400">Learning Roadmap</span>
         </motion.h2>
 
@@ -167,7 +191,7 @@ const H_Section_04 = () => {
                         : "rgba(255,255,255,0.15)",
                     }}
                     transition={{ duration: 0.6 }}
-                    className={`absolute w-px ${isTop ? "top-[-45px] h-20" : "h-20"}`}
+                    className={`absolute w-px ${isTop ? "top-[-26px] h-10" : "h-20"}`}
                   />
 
                   {/* Dot */}

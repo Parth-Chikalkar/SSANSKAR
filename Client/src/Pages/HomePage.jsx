@@ -24,11 +24,11 @@ import Footer from '../Components/Footer'
      <>
       {showRain && <CoinsRain/>}
       <Navbar/>
-      <H_Section_01 />
-      <H_Section_02 />
-      <H_Section_03 />
-      <H_Section_05/>
-      <H_Section_06/>
+     <section id="home"><H_Section_01 /></section>
+      <section id="about"><H_Section_02 /></section>
+      <section id="services"><H_Section_03 /></section>
+      <section id="roadmap"><H_Section_05 /></section>
+      <section id="mentors"><H_Section_06 /></section>
       <H_Section_07/>
       <H_Section_08/>
       <Footer/>

@@ -72,10 +72,11 @@ function H_Section_06() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="mt-4 text-center text-white/60 max-w-xl mx-auto"
+          className="mt-4 text-center  text-white/60 max-w-3xl mx-auto"
         >
-          Hey, meet our advisers! They're the brains behind our company's
-          success. Couldn't have done it without them.
+          Our advisers bring deep market expertise and strategic insight to the academy. 
+Their experience and guidance ensure that our students receive structured, 
+high-quality trading education.
         </motion.p>
 
         {/* Grid */}

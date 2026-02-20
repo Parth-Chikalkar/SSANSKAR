@@ -58,8 +58,7 @@ const H_Section_02 = () => {
             transition={{ delay: 0.2 }}
             className="mt-6 font-['Montserrat_Alternates'] text-white/70 text-[20px] leading-relaxed"
           >
-            SSANSKAR Trading Academy is a trusted and distinguished institute in stock market education. With 1,000+ successful  students, we focus on building skilled, confident, and disciplined traders  through practical, real market learning. To empower students with the right knowledge, confidence,
-and disciplined approach to succeed in the stock market.
+            SSANSKAR Trading Academy is a trusted and distinguished institute in stock market education. With over 1,000 successful students, we focus on developing skilled, confident, and disciplined traders through practical, real-market learning. Our mission is to empower students with the right knowledge, confidence, and disciplined approach to succeed in the stock market.
           </motion.p>
         </motion.div>
 
@@ -78,15 +77,15 @@ and disciplined approach to succeed in the stock market.
               <span className="text-green-400">Skills</span> We Focus On
             </h3>
 
-            <ul className="mt-8 space-y-6 font-['Montserrat_Alternates'] text-white/80 text-[20px]">
-              <li>Stock Market Structure & System Understanding</li>
-              <li>Investment & Swing Trading Strategies</li>
-              <li>Pure Price Action Chart Reading</li>
-              <li>Futures & Options Knowledge</li>
-              <li>Risk Management & Position Sizing</li>
-              <li>Trading Psychology & Discipline</li>
-              <li>Market Analysis & Trade Planning</li>
-            </ul>
+           <ul className="mt-8 space-y-6 font-['Montserrat_Alternates'] text-white/80 text-[20px]">
+  <li>Stock Market Structure & System Analysis</li>
+  <li>Investment & Swing Trading Strategies</li>
+  <li>Pure Price Action Chart Analysis</li>
+  <li>Futures & Options Fundamentals</li>
+  <li>Risk Management & Position Sizing Techniques</li>
+  <li>Trading Psychology & Discipline</li>
+  <li>Market Analysis & Strategic Trade Planning</li>
+</ul>
           </div>
 
           {/* Illustration */}

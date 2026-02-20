@@ -7,17 +7,17 @@ import jd from "../../assets/Platforms/justdial.png";
 const platforms = [
   {
     id: 1,
-    title: "Ssanskar On",
-    subtitle: "YouTube",
+    title: "SSANSKAR on",
+subtitle: "YouTube",
     img: yt,
-    link: "",
+    link: "https://www.youtube.com/@ssanskartradingacademy7280",
   },
   {
     id: 2,
-    title: "Ssanskar On",
-    subtitle: "Justdial",
+    title: "SSANSKAR on",
+subtitle: "Justdial",
     img: jd,
-    link: "",
+    link: "https://www.justdial.com/Kolhapur/SSANSKAR-TRADING-ACADEMY-Near-Venus-Corner-Venus-Corner/0231PX231-X231-220701221744-V9P9_BZDET?auto=1&trkid=3669428959&term=SSANSKAR%20TRADING",
   },
 ];
 
@@ -61,8 +61,8 @@ function H_Section_08() {
         className="text-center mb-16 px-6"
       >
         <h2 className="text-4xl md:text-5xl font-['Anek_Telugu'] font-semibold text-white tracking-tight">
-          Trusted & Recognized Across{" "}
-          <span className="text-emerald-400">Platforms</span>
+         Trusted and Recognized Across Leading{" "}
+<span className="text-emerald-400">Platforms</span>
         </h2>
       </motion.div>
 
@@ -103,7 +103,7 @@ function H_Section_08() {
         ))}
       </motion.div>
 
-      {/* Pagination */}
+    
       <div className="flex gap-3 mt-8">
         {platforms.map((_, index) => (
           <button

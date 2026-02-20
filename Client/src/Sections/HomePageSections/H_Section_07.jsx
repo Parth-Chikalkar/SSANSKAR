@@ -97,7 +97,7 @@ function H_Section_07() {
         className="max-w-6xl mx-auto px-6 mt-20"
       >
         <h2 className="text-center font-['Anek_Telugu'] text-4xl font-semibold text-white mb-8">
-          Find <span className="text-emerald-400">Learning Center</span> On Map
+         Locate Our <span className="text-emerald-400">Learning Center</span> on the Map
         </h2>
 
         <div className="overflow-hidden rounded-2xl border border-[#1e2f2a]">
