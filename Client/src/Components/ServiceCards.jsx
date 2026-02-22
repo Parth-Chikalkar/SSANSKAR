@@ -1,50 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img1 from "../assets/Services/Services1.png";
-import img2 from "../assets/Services/Services2.png";
-import img3 from "../assets/Services/Services3.png";
-import img4 from "../assets/Services/Services4.png";
-import img5 from "../assets/Services/Services5.png";
-import img6 from "../assets/Services/Services6.png";
+import services from "../Data/Services"
 
-const services = [
-  {
-    title: "Free access to trading room & Classroom",
-    desc:
-      "Looking for a social assistant that is flexible? Look no further! Our team of assistants is here to help.",
-    media: img1,
-  },
-  {
-    title: "Modules For Smart Trading",
-    desc:
-      "There are tons of modules for smart trading out there, but finding the right ones takes time and research",
-    media: img2,
-  },
-  {
-    title: "Lifetime Community support and doubt-clearing",
-    desc:
-      "As a news analyst, the reporter observed various stories unfolding, providing casual yet insightful analysis on each.",
-    media: img3,
-  },
-  {
-    title: "No education, age, or language barriers",
-    desc:
-      "Have you checked out any new cryptocurrency platforms? I hear there are some exciting ones coming soon!",
-    media: img4,
-  },
-  {
-    title: "Live market sessions with experienced traders",
-    desc:
-      "Hey, just wanted to give you a heads up that there have been some changes to exchange orders recently.",
-    media: img5,
-  },
-  {
-    title: "Beginner-friendly learning environment.",
-    desc:
-      "So I added a price notification module to my online shopping app, and now I'm saving money like crazy!",
-    media: img6,
-  },
-];
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },

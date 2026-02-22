@@ -16,14 +16,14 @@ import Footer from '../Components/Footer'
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowRain(false);
-    }, 4500);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
     return (
      <>
-      {showRain && <CoinsRain/>}
-      <Navbar/>
+      {showRain ? <CoinsRain/> : <>
+        <Navbar/>
      <section id="home"><H_Section_01 /></section>
       <section id="about"><H_Section_02 /></section>
       <section id="services"><H_Section_03 /></section>
@@ -32,6 +32,9 @@ import Footer from '../Components/Footer'
       <H_Section_07/>
       <H_Section_08/>
       <Footer/>
+      
+      </>}
+    
     </>
     )
   }

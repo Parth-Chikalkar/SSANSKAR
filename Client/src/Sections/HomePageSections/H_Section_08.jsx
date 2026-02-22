@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import PlatformCard from "../../Components/PlatformCard";
 import yt from "../../assets/Platforms/youtube.png";
 import jd from "../../assets/Platforms/justdial.png";
+import ps from "../../assets/Platforms/playstore.png"
 
 const platforms = [
   {
@@ -19,6 +20,14 @@ subtitle: "Justdial",
     img: jd,
     link: "https://www.justdial.com/Kolhapur/SSANSKAR-TRADING-ACADEMY-Near-Venus-Corner-Venus-Corner/0231PX231-X231-220701221744-V9P9_BZDET?auto=1&trkid=3669428959&term=SSANSKAR%20TRADING",
   },
+  {
+    id :3 ,
+    title : "SSANSKAR on",
+    subtitle : "Google Play",
+    img : ps,
+    link : "https://play.google.com/store/apps/details?id=co.amy.wtqlr&hl=en-US"
+  }
+
 ];
 
 function H_Section_08() {

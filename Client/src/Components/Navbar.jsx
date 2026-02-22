@@ -3,7 +3,7 @@ import { useState } from "react";
 import logo from "../assets/image.png";
 import { Link } from "react-router-dom";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 const navItems = [
   { name: "Home", link: "home" },
   { name: "About", link: "about" },
@@ -55,10 +55,24 @@ const Navbar = () => {
           scrolled ? "bg-black/20 backdrop-blur-lg border-b border-white/10" : "bg-transparent"
         }`}
       >
-        <Link className="flex  items-center" to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          <img src={logo} alt="Logo" className="w-16 h-16 md:w-20 md:h-20" />
-          <h1 className="text-green-400 font-['Anek_Telugu'] drop-shadow-[0_0_12px_rgba(34,197,94,0.6)] text-2xl font-bold ">SSANSKAR</h1>
-        </Link>
+       <Link 
+  to="/" 
+  className="flex items-center gap-3 rounded-full  " 
+  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+>
+
+  <div className="w-16 h-16 rounded-full  overflow-hidden flex items-center justify-center">
+    <img 
+      src={logo} 
+      alt="SSANSKAR Logo" 
+      className="h-full scale-130 w-full object-contain" 
+    />
+  </div>
+
+  <h1 className="text-green-400 font-['Anek_Telugu'] drop-shadow-[0_0_12px_rgba(34,197,94,0.6)] text-2xl font-bold tracking-tight">
+    SSANSKAR
+  </h1>
+</Link>
 
         <div className="hidden md:flex items-center gap-8">
           <ul className="flex gap-10 text-sm text-white/80">
@@ -82,7 +96,7 @@ const Navbar = () => {
         </div>
 
         <button onClick={() => setOpen(true)} className="md:hidden text-white text-3xl">
-          <HiMenuAlt3 />
+          <GiHamburgerMenu />
         </button>
       </motion.nav>
 

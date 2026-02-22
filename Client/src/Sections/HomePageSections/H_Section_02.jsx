@@ -23,7 +23,7 @@ const H_Section_02 = () => {
   };
 
   return (
-    <section className="relative w-full bg-gradient-to-b from-[#050D0B] via-[#050D0B] to-[#0A1F19] pt-20  overflow-hidden">
+    <section className="relative w-full bg-gradient-to-b pb-10 from-[#050D0B] via-[#050D0B] to-[#0A1F19] pt-20  overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
 
         {/* Heading */}
@@ -63,7 +63,7 @@ const H_Section_02 = () => {
         </motion.div>
 
         {/* Content Grid */}
-        <div className="mt-16 grid md:grid-cols-2 gap-16 items-start">
+        <div className="mt-16 grid md:grid-cols-2 md:gap-16 gap-10 items-start">
 
           {/* Skills */}
           <div ref={skillsRef} className="relative pl-10">
@@ -92,8 +92,10 @@ const H_Section_02 = () => {
           <div className="relative flex justify-center">
             <div className="
   absolute
-  w-[160px]
-  h-[520px]
+  md:w-[160px]
+  w-[120px]
+  md:h-[520px]
+  h-[420px]
   rotate-[-130deg]
   rounded-[186.5px]
   bg-white/10
@@ -105,8 +107,10 @@ const H_Section_02 = () => {
 
 <div className="
   absolute
-  w-[220px]
-  h-[590px]
+  md:w-[220px]
+  w-[170px]
+  md:h-[590px]
+  h-[490px]
   rotate-[-130deg]
   rounded-[186.5px]
   bg-white/5
@@ -131,7 +135,7 @@ const H_Section_02 = () => {
               className="absolute w-[600px] md:w-[764px] right-[-40px] top-20 -z-10"
             />
 
-            <div className="absolute top-25 -z-20 w-[300px] h-[300px] bg-green-400/40 rounded-full blur-[120px]" />
+            <div className="absolute md:top-30 top-25 -z-20 w-[300px] h-[150px] bg-green-400/40 rounded-full blur-[120px]" />
           </div>
         </div>
       </div>

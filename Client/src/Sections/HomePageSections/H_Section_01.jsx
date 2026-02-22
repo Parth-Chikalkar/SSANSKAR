@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import bitcoinImg from "../../assets/bitcoin-stack.png";
+import bitcoinImg from "../../assets/indian_coin_stack.png";
 import { FiArrowRightCircle } from "react-icons/fi";
 import { BsPlayFill } from "react-icons/bs";
 
@@ -137,7 +137,7 @@ work and enhance your decision-making skills step by step.
                 shadow-[0_0_35px_rgba(34,197,94,0.45)]
               "
             >
-              Get Started <FiArrowRightCircle />
+              Book Inquiry <FiArrowRightCircle />
             </motion.button>
 
             <motion.button
@@ -157,7 +157,7 @@ work and enhance your decision-making skills step by step.
                 hover:bg-white/20
               "
             >
-              <BsPlayFill className="text-xl" /> Watch Video
+              <BsPlayFill className="text-xl" /> Show Video
             </motion.button>
           </motion.div>
         </div>
