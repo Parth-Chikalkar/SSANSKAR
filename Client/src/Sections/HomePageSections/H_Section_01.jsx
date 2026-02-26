@@ -77,7 +77,7 @@ const [progress, setProgress] = useState(0);
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="font-['Anek_Telugu'] font-semibold tracking-[-0.5px] leading-tight text-[38px] sm:text-[44px] md:text-[52px] lg:text-[60px]"
+              className="font-['Anek_Telugu'] font-semibold tracking-[-0.5px] leading-tight text-[33px] sm:text-[44px] md:text-[52px] lg:text-[60px]"
             >
               <span className="block">“Where Trading Meets</span>
               <span className="block">
