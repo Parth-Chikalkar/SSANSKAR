@@ -21,8 +21,8 @@ function Footer() {
           {/* Brand / Description */}
           <div className="space-y-3 w-full lg:w-auto">
             <div className="flex items-center gap-2 text-emerald-400 text-xl font-semibold">
-              <img src={img} className="rounded-full h-17 w-17" alt="logo" />
-              <span className="font-['Anek_Telugu'] drop-shadow-[0_0_12px_rgba(34,197,94,0.6)] font-semibold text-2xl">
+              <img src={img} className=" h-17 w-17" alt="logo" />
+              <span className="font-['Anek_Telugu'] mt-3 drop-shadow-[0_0_12px_rgba(34,197,94,0.6)] font-semibold text-2xl">
                 SSANSKAR
               </span>
             </div>

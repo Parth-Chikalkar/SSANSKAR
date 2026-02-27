@@ -9,6 +9,7 @@ import H_Section_06 from '../Sections/HomePageSections/H_Section_06'
 import H_Section_07 from '../Sections/HomePageSections/H_Section_07'
 import H_Section_08 from '../Sections/HomePageSections/H_Section_08'
 import Footer from '../Components/Footer'
+import H_Section_04 from '../Sections/HomePageSections/H_Section_04'
 
   const HomePage = () => {
      const [showRain, setShowRain] = useState(true);
@@ -27,6 +28,7 @@ import Footer from '../Components/Footer'
      <section id="home"><H_Section_01 /></section>
       <section id="about"><H_Section_02 /></section>
       <section id="services"><H_Section_03 /></section>
+      <H_Section_04/>
       <section id="roadmap"><H_Section_05 /></section>
       <section id="mentors"><H_Section_06 /></section>
       <H_Section_07/>

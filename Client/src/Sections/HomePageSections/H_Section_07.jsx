@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ReviewCard from "../../Components/ReviewCard";
 import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
@@ -6,7 +6,24 @@ import reviews from "../../Data/Reviews"
 function H_Section_07() {
   const scrollRef = useRef(null);
   const [showAll, setShowAll] = useState(false); // State for the View All modal
+  useEffect(() => {
+  const container = scrollRef.current;
+  if (!container) return;
 
+  const interval = setInterval(() => {
+    if (
+      container.scrollLeft + container.offsetWidth >=
+      container.scrollWidth
+    ) {
+      // If reached end → go back to start
+      container.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      container.scrollBy({ left: 350, behavior: "smooth" });
+    }
+  }, 3000); // change speed here (3 seconds)
+
+  return () => clearInterval(interval);
+}, []);
   const scrollLeft = () => {
     scrollRef.current.scrollBy({ left: -350, behavior: "smooth" });
   };

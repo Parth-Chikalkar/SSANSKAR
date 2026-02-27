@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import illustration from "../../assets/Section_02.png";
 import illustration2 from "../../assets/Section_02_bg.png";
-
+import illustration3 from "../../assets/Section_2/image.png";
 const H_Section_02 = () => {
   const skillsRef = useRef(null);
 
@@ -90,7 +90,7 @@ const H_Section_02 = () => {
 
           {/* Illustration */}
           <div className="relative flex justify-center">
-            <div className="
+            {/* <div className="
   absolute
   md:w-[160px]
   w-[120px]
@@ -117,7 +117,7 @@ const H_Section_02 = () => {
   shadow-[0_0_40px_rgba(255,255,255,0.05)]
   opacity-50
   pointer-events-none
-" />
+" /> */}
 
 
 
@@ -132,7 +132,13 @@ const H_Section_02 = () => {
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity }}
               src={illustration2}
-              className="absolute w-[600px] md:w-[764px] right-[-40px] top-20 -z-10"
+              className="absolute w-[600px] md:w-[764px] right-[-40px] top-20 z-15"
+            />
+            <motion.img
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 4, repeat: Infinity }}
+              src={illustration3}
+              className="absolute w-[600px] md:w-[764px] md:right-[-40px]  md:top-0 top-20 z-20 opacity-80"
             />
 
             <div className="absolute md:top-30 top-25 -z-20 w-[300px] h-[150px] bg-green-400/40 rounded-full blur-[120px]" />

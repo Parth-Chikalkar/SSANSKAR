@@ -4,7 +4,7 @@ import PlatformCard from "../../Components/PlatformCard";
 import yt from "../../assets/Platforms/youtube.png";
 import jd from "../../assets/Platforms/justdial.png";
 import ps from "../../assets/Platforms/playstore.png"
-
+import ig from "../../assets/Platforms/Instagram.png"
 const platforms = [
   {
     id: 1,
@@ -26,6 +26,13 @@ subtitle: "Justdial",
     subtitle : "Google Play",
     img : ps,
     link : "https://play.google.com/store/apps/details?id=co.amy.wtqlr&hl=en-US"
+  },
+  {
+    id :4 ,
+    title : "SSANSKAR on",
+    subtitle : "Instagram",
+    img : ig,
+    link : "https://www.instagram.com/ssanskar_trading_academy"
   }
 
 ];

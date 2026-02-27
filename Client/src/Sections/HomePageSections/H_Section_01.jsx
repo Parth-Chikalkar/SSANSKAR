@@ -117,114 +117,13 @@ const [progress, setProgress] = useState(0);
                 Book Inquiry <FiArrowRightCircle />
               </motion.button>
 
-              <motion.button
-                onClick={() => setShowVideo(true)}
-                className="flex items-center justify-center gap-3 text-white/80 px-6 py-4 rounded-lg bg-white/10 backdrop-blur tracking-wider hover:bg-white/20"
-              >
-                <BsPlayFill className="text-xl" /> Show Video
-              </motion.button>
+            
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* 🎬 Video Modal */}
-   <AnimatePresence>
-  {showVideo && (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
-      onClick={closeModal}
-    >
-      <motion.div
-        initial={{ scale: 0.9 }}
-        animate={{ scale: 1 }}
-        exit={{ scale: 0.9 }}
-        transition={{ duration: 0.3 }}
-        onClick={(e) => e.stopPropagation()}
-        className="
-          relative
-          w-[92vw]
-          max-w-[420px]
-          h-[85vh]
-          bg-black
-          rounded-2xl
-          overflow-hidden
-          shadow-2xl
-        "
-      >
-        {/* VIDEO CONTAINER */}
-        <div className="relative w-full h-full">
-          
-          <video
-            ref={videoRef}
-            autoPlay
-            playsInline
-            loop
-            preload="metadata"
-            onTimeUpdate={() => {
-              const video = videoRef.current;
-              const percentage =
-                (video.currentTime / video.duration) * 100;
-              setProgress(percentage);
-            }}
-            className="w-full h-full object-cover"
-          >
-            <source
-              src="https://ozf1yx5t6oecfmx3.public.blob.vercel-storage.com/SanskarAcademy.mp4"
-              type="video/mp4"
-            />
-          </video>
 
-          {/* Close Button */}
-          <button
-            onClick={closeModal}
-            className="absolute top-4 right-4 text-white text-xl bg-black/60 px-3 py-1 rounded-full"
-          >
-            ✕
-          </button>
-
-          {/* Play / Pause */}
-          <button
-            onClick={() => {
-              const video = videoRef.current;
-              if (video.paused) {
-                video.play();
-                setIsPlaying(true);
-              } else {
-                video.pause();
-                setIsPlaying(false);
-              }
-            }}
-            className="absolute bottom-16 left-4 bg-black/60 backdrop-blur px-4 py-2 rounded-full text-white text-sm"
-          >
-            {isPlaying ? "Pause" : "Play"}
-          </button>
-
-          {/* Timeline */}
-          <div
-            onClick={(e) => {
-              const video = videoRef.current;
-              const rect = e.currentTarget.getBoundingClientRect();
-              const clickX = e.clientX - rect.left;
-              const width = rect.width;
-              video.currentTime =
-                (clickX / width) * video.duration;
-            }}
-            className="absolute bottom-0 left-0 w-full h-1.5 bg-white/20 cursor-pointer"
-          >
-            <div
-              style={{ width: `${progress}%` }}
-              className="h-full bg-green-400 transition-all duration-150"
-            />
-          </div>
-        </div>
-      </motion.div>
-    </motion.div>
-  )}
-</AnimatePresence>
     </>
   );
 };
