@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import heroImg from "../../assets/Homepage/homepg3.png";
 import { FiArrowRightCircle } from "react-icons/fi";
-import bgImg  from "../../assets/Homepage/homeBg.png";
+import bgImg  from "../../assets/Homepage/homeBg.jpg";
 import mobileImg from "../../assets/Homepage/homepg2.png";
 const textVariant = {
   hidden: { opacity: 0, y: 30 },
