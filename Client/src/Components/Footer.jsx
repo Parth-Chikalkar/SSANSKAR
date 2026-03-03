@@ -1,109 +1,108 @@
 import React from "react";
 import {
   FaFacebookF,
-  FaLinkedinIn,
   FaInstagram,
   FaYoutube,
-  FaTwitter,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 import img from "../assets/image.png";
 
 function Footer() {
+  // Social Media Data
+  const socialLinks = [
+    { Icon: FaFacebookF, url: "https://www.facebook.com/joinssansta/reviews/" },
+    { Icon: FaInstagram, url: "https://www.instagram.com/ssanskar_trading_academy" },
+    { Icon: FaYoutube, url: "https://www.youtube.com/@ssanskartradingacademy7280" },
+  ];
+
   return (
     <footer className="w-full bg-gradient-to-b from-[#050D0B] to-[#020806] text-gray-400">
       <div className="max-w-7xl mx-auto px-6 py-20">
         
-        {/* Top Section */}
-        {/* Changed: added flex-col for mobile, lg:flex-row for desktop. 
-            Changed items-start for mobile alignment, lg:items-center for original desktop alignment */}
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12">
+        {/* Main Grid Container */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           
-          {/* Brand / Description */}
-          <div className="space-y-3 w-full lg:w-auto">
-            <div className="flex items-center gap-2 text-emerald-400 text-xl font-semibold">
-              <img src={img} className=" h-17 w-17" alt="logo" />
-              <span className="font-['Anek_Telugu'] mt-3 drop-shadow-[0_0_12px_rgba(34,197,94,0.6)] font-semibold text-2xl">
+          {/* Left Column: Brand / Description */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-3 text-emerald-400">
+              <img src={img} className="h-16 w-16 object-contain" alt="logo" />
+              <span className="font-['Anek_Telugu'] drop-shadow-[0_0_12px_rgba(34,197,94,0.6)] font-semibold text-2xl tracking-wider text-white">
                 SSANSKAR
               </span>
             </div>
 
-            <p className="text-sm leading-relaxed max-w-xs">
-            SSANSKAR Trading Academy delivers structured and practical 
-stock market education designed to build disciplined, confident, 
-and skilled traders. Our mission is to empower individuals with 
-real-world knowledge and long-term market success strategies.
+            <p className="text-sm leading-relaxed max-w-md text-gray-400">
+              SSANSKAR Trading Academy delivers structured and practical 
+              stock market education designed to build disciplined, confident, 
+              and skilled traders. Our mission is to empower individuals with 
+              real-world knowledge and long-term market success strategies.
             </p>
 
-            <div className="flex gap-4 mt-8">
-              {[
-                FaFacebookF,
-                FaLinkedinIn,
-                FaInstagram,
-                FaYoutube,
-                FaTwitter,
-              ].map((Icon, idx) => (
-                <div
+            {/* Social Icons */}
+            <div className="flex gap-4 pt-4">
+              {socialLinks.map(({ Icon, url }, idx) => (
+                <a
                   key={idx}
-                  className="w-9 h-9 rounded-full border border-white/10 
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-white/10 
                     flex items-center justify-center hover:border-emerald-400
-                    hover:text-emerald-400 transition-all cursor-pointer"
+                    hover:text-emerald-400 transition-all duration-300 cursor-pointer bg-white/5"
                 >
-                  <Icon size={14} />
-                </div>
+                  <Icon size={16} />
+                </a>
               ))}
             </div>
           </div>
 
-          {/* Quick Links / Support / Company */}
-          {/* Changed: w-[600px] is now lg:w-[600px] (desktop only). 
-              Added w-full for mobile. 
-              Added flex-wrap so columns don't squish on tiny screens. */}
-          <div className="flex flex-wrap md:flex-nowrap items-start justify-between gap-8 w-full lg:w-[600px]">
-            
-            {/* Quick Links */}
-            <div className="min-w-[120px]">
-              <h4 className="text-white font-medium mb-5">Quick links</h4>
-              <ul className="space-y-3 text-sm">
-                <li className="hover:text-emerald-400 cursor-pointer">About Us</li>
-                <li className="hover:text-emerald-400 cursor-pointer">Teams</li>
-                <li className="hover:text-emerald-400 cursor-pointer">Services</li>
-                <li className="hover:text-emerald-400 cursor-pointer">Features</li>
-              </ul>
-            </div>
+          {/* Right Column: Contact Info */}
+          <div className="lg:pl-20">
+            <h4 className="text-white font-['Anek_Telugu'] text-xl mb-8 tracking-wide">
+              CONTACT US
+            </h4>
 
-            {/* Support */}
-            <div className="min-w-[120px]">
-              <h4 className="text-white font-medium mb-5">Support</h4>
-              <ul className="space-y-3 text-sm">
-                <li className="hover:text-emerald-400 cursor-pointer">
-                  Terms & Conditions
-                </li>
-                <li className="hover:text-emerald-400 cursor-pointer">
-                  Privacy Policy
-                </li>
-                <li className="hover:text-emerald-400 cursor-pointer">FAQs</li>
-                <li className="hover:text-emerald-400 cursor-pointer">
-                  Support Center
-                </li>
-              </ul>
-            </div>
+            <ul className="space-y-6 text-gray-300 text-sm">
+              {/* Phone */}
+              <li className="flex items-start gap-4 group">
+  <FaPhoneAlt className="text-emerald-400 text-lg mt-1 transition-transform group-hover:scale-110" />
+  <a 
+    href="tel:+917720939777" 
+    className="hover:text-emerald-400 transition-colors duration-300"
+  >
+    +91 7720939777
+  </a>
+</li>
 
-            {/* Company */}
-            <div className="min-w-[120px]">
-              <h4 className="text-white font-medium mb-5">Company</h4>
-              <ul className="space-y-3 text-sm">
-                <li className="hover:text-emerald-400 cursor-pointer">Careers</li>
-                <li className="hover:text-emerald-400 cursor-pointer">Updates</li>
-                <li className="hover:text-emerald-400 cursor-pointer">Job</li>
-                <li className="hover:text-emerald-400 cursor-pointer">Announce</li>
-              </ul>
-            </div>
+{/* Email */}
+<li className="flex items-start gap-4 group">
+  <FaEnvelope className="text-emerald-400 text-lg mt-1 transition-transform group-hover:scale-110" />
+  <a 
+    href="mailto:koshafabricartistry9@gmail.com" 
+    className="hover:text-emerald-400 transition-colors duration-300 break-all"
+  >
+    koshafabricartistry9@gmail.com
+  </a>
+</li>
+
+              {/* Address */}
+              <li className="flex items-start gap-4">
+                <FaMapMarkerAlt className="text-emerald-400 text-lg mt-1" />
+                <span className="leading-relaxed">
+                  Vasant Rutu Plaza Shop No - F8, 1st Floor <br />
+                  Shahu Road, Venus Corner, above ICICI Bank, <br />
+                  Kolhapur, Maharashtra 416001
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-white/10 mt-16 pt-6 text-center text-sm">
-          © 2026 SSANSKAR Trading Academy. All Rights Reserved.
+        {/* Bottom Copyright */}
+        <div className="border-t border-white/10 mt-16 pt-8 text-center text-xs tracking-widest uppercase">
+          © {new Date().getFullYear()} SSANSKAR Trading Academy. All Rights Reserved.
         </div>
       </div>
     </footer>

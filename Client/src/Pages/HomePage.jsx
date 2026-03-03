@@ -10,6 +10,7 @@ import H_Section_07 from '../Sections/HomePageSections/H_Section_07'
 import H_Section_08 from '../Sections/HomePageSections/H_Section_08'
 import Footer from '../Components/Footer'
 import H_Section_04 from '../Sections/HomePageSections/H_Section_04'
+import WhatsappButton from '../Components/WhatsappButton'
 
   const HomePage = () => {
      const [showRain, setShowRain] = useState(true);
@@ -28,12 +29,13 @@ import H_Section_04 from '../Sections/HomePageSections/H_Section_04'
      <section id="home"><H_Section_01 /></section>
       <section id="about"><H_Section_02 /></section>
       <section id="services"><H_Section_03 /></section>
-      <H_Section_04/>
+      <section id="sebi"><H_Section_04 /></section> 
       <section id="roadmap"><H_Section_05 /></section>
       <section id="mentors"><H_Section_06 /></section>
-      <H_Section_07/>
-      <H_Section_08/>
-      <Footer/>
+     <section id="reviews"><H_Section_07/></section>
+      <section id="platforms"><H_Section_08/></section>
+     <section id='contact'> <Footer/></section>
+       <WhatsappButton />
       
       </>}
     

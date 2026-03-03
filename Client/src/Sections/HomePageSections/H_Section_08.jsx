@@ -5,6 +5,7 @@ import yt from "../../assets/Platforms/youtube.png";
 import jd from "../../assets/Platforms/justdial.png";
 import ps from "../../assets/Platforms/playstore.png"
 import ig from "../../assets/Platforms/Instagram.png"
+import fb from "../../assets/Platforms/Facebook.png"
 const platforms = [
   {
     id: 1,
@@ -33,6 +34,13 @@ subtitle: "Justdial",
     subtitle : "Instagram",
     img : ig,
     link : "https://www.instagram.com/ssanskar_trading_academy"
+  },
+  {
+    id :5 ,
+    title : "SSANSKAR on",
+    subtitle : "Facebook",
+    img : fb,
+    link :"https://www.facebook.com/joinssansta/reviews/",
   }
 
 ];

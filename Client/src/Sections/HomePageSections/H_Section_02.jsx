@@ -23,7 +23,7 @@ const H_Section_02 = () => {
   };
 
   return (
-    <section className="relative w-full bg-gradient-to-b pb-10 from-[#050D0B] via-[#050D0B] to-[#0A1F19] md:pt-20  overflow-hidden">
+    <section className="relative w-full bg-gradient-to-b pb-10 from-[#050D0B] via-[#050D0B] to-[#0A1F19]  pt-20  overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
 
         {/* Heading */}

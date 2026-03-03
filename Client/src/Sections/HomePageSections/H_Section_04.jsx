@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import bgImage from "../../assets/SEBI/image.png";
+import bgImage from "../../assets/SEBI/sebi.png";
 import { motion } from "framer-motion";
 
 function H_Section_04() {
@@ -62,25 +62,44 @@ function H_Section_04() {
       <div className="max-w-7xl mx-auto font-['Anek_Telugu'] text-center">
 
         {/* SEBI Section */}
-        <div
-          className="relative  bg-contain bg-center rounded-lg overflow-hidden bg-no-repeat py-20 px-6 text-center"
-        
-        >
-          <div className="relative z-10">
-            <h2 className="text-5xl font-bold mb-4">
-              The <span className="text-green-400">SEBI</span> at a Glance
-            </h2>
+        {/* Background Image with Overlay */}
+       {/* SEBI Section */}
+<div className="relative text-center px-6">
 
-            <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
-              “Our courses are aligned with SEBI guidelines, ensuring that all
-              training is compliant with India’s securities regulations and
-              promotes responsible trading.”
-            </p>
-          </div>
-        </div>
+  {/* Title + Paragraph */}
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+    viewport={{ once: true }}
+    className="relative z-20"
+  >
+    <h2 className="text-5xl font-bold mb-4">
+      The <span className="text-green-400">SEBI</span> at a Glance
+    </h2>
+
+    <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
+      “Our courses are aligned with SEBI guidelines, ensuring that all
+      training is compliant with India’s securities regulations and
+      promotes responsible trading.”
+    </p>
+  </motion.div>
+
+  {/* Background Image BELOW text (Hidden on Mobile) */}
+  <motion.div
+  
+    transition={{ duration: 1 }}
+    viewport={{ once: true }}
+    className="hidden md:block absolute h-65 opacity-20 -top-20 rounded-lg inset-0 bg-cover  bg-center bg-no-repeat pointer-events-none"
+    style={{
+      backgroundImage: `url(${bgImage})`,
+    }}
+  />
+
+</div>
 
         {/* Journey */}
-        <h3 className="text-3xl font-semibold text-green-400 md:mt-14 mb-8">
+        <h3 className="md:text-5xl text-3xl  font-semibold text-green-400 mt-10 md:mt-34 mb-8">
           Journey
         </h3>
 
