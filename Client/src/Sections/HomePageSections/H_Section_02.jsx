@@ -23,7 +23,7 @@ const H_Section_02 = () => {
   };
 
   return (
-    <section className="relative w-full bg-gradient-to-b pb-10 from-[#050D0B] via-[#050D0B] to-[#0A1F19]  pt-20  overflow-hidden">
+    <section className="relative w-full bg-[#00150F]  pt-20  overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
 
         {/* Heading */}
@@ -90,34 +90,7 @@ const H_Section_02 = () => {
 
           {/* Illustration */}
           <div className="relative flex justify-center">
-            {/* <div className="
-  absolute
-  md:w-[160px]
-  w-[120px]
-  md:h-[520px]
-  h-[420px]
-  rotate-[-130deg]
-  rounded-[186.5px]
-  bg-white/10
-  shadow-[0_0_40px_rgba(255,255,255,0.08)]
-  top-8
-  opacity-60
-  pointer-events-none
-" />
-
-<div className="
-  absolute
-  md:w-[220px]
-  w-[170px]
-  md:h-[590px]
-  h-[490px]
-  rotate-[-130deg]
-  rounded-[186.5px]
-  bg-white/5
-  shadow-[0_0_40px_rgba(255,255,255,0.05)]
-  opacity-50
-  pointer-events-none
-" /> */}
+            
 
 
 
@@ -125,23 +98,23 @@ const H_Section_02 = () => {
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity }}
               src={illustration}
-              className="w-[300px] md:w-[364px] relative z-10"
+              className="w-[300px] md:w-[364px] relative z-5 opacity-40"
             />
 
             <motion.img
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity }}
               src={illustration2}
-              className="absolute w-[600px] md:w-[764px] right-[-40px] top-20 z-15"
+              className="absolute w-[600px] md:w-[764px] md:right-[-55px] right-[-10px] top-50 z-15"
             />
             <motion.img
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity }}
               src={illustration3}
-              className="absolute w-[600px] md:w-[764px] md:right-[-40px]  md:top-0 top-20 z-20 opacity-80"
+              className="absolute w-[600px] md:w-[764px] md:right-[-40px] md:top-0 top-20 z-10 opacity-70"
             />
 
-            <div className="absolute md:top-30 top-25 -z-20 w-[300px] h-[150px] bg-green-400/40 rounded-full blur-[120px]" />
+            
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ function H_Section_03() {
     <section className="relative w-full bg-[#050D0B] py-10 md:py-0 md:pb-24 ">
       
       {/* Background glow */}
-      <div className="absolute  inset-0 bg-gradient-to-b from-[#0E2C23]/60 to-transparent pointer-events-none" />
+      <div className="absolute  inset-0 bg-[#00150F] pointer-events-none" />
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}

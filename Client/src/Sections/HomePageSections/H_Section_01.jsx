@@ -2,7 +2,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import heroImg from "../../assets/Homepage/homepg3.png";
 import { FiArrowRightCircle } from "react-icons/fi";
-import bgImg  from "../../assets/Homepage/homeBg.jpg";
 import mobileImg from "../../assets/Homepage/homepg2.png";
 const textVariant = {
   hidden: { opacity: 0, y: 30 },
@@ -21,7 +20,7 @@ const H_Section_01 = () => {
   const sectionRef = useRef(null);
 
     const phoneNumber = "9108668438665"; // Without + and spaces
-  const message = "Hello SSANSKAR Academy, I would like to inquire about trading courses.";
+ const message = "Hello SSANSKAR Academy I found your academy through your website and would like to request more information about your trading academy";
    const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
@@ -37,16 +36,15 @@ const H_Section_01 = () => {
   return (
     <section
       ref={sectionRef}
-className="relative min-h-screen bg-gradient-to-b from-[#081915]/90 via-[#0E2C23]/90 to-[#050D0B]/90 overflow-hidden"
+className="relative min-h-screen bg-[#00150F] overflow-hidden"
 style={{
-  backgroundImage: `url(${bgImg})`,
+  backgroundImage: `url("https://res.cloudinary.com/dr8poybri/image/upload/f_auto,q_auto/v1772917248/homeBg_agdln8.jpg")`,
   backgroundSize: "cover",
   backgroundPosition: "top",
-  backgroundBlendMode: "overlay",
+
 }}    >
     
    
-
       <div className="relative z-10 max-w-7xl md:mt-7 mx-auto mt-16 px-5 pt-28 md:pt-35 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
 
        
@@ -105,7 +103,7 @@ style={{
   whileInView={{ opacity: 1, scale: 1 }}
   viewport={{ once: true }}
   transition={{ duration: 1 }}
-  className="relative flex  md:mt-0 scale-105 mt-5 justify-center md:justify-start"
+  className="relative flex  md:mt-0 mt-5 justify-center md:justify-start"
 >
   {/* Main Image */}
   <motion.img
@@ -113,7 +111,7 @@ style={{
     alt="Main Trading"
     animate={{ y: [0, -12, 0] }}
     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-    className="relative z-10 left-2 rotate-[-10deg] w-[380px] sm:w-[340px] md:w-[500px]  drop-shadow-[0_0_40px_rgba(34,197,94,0.25)]"
+    className="relative z-10 left-2 rotate-[-5  deg] w-[380px] sm:w-[340px] md:w-[900px]  drop-shadow-[0_0_40px_rgba(34,197,94,0.25)]"
   />
 
   {/* Overlapping Image */}

@@ -50,14 +50,14 @@ function H_Section_06() {
       variants={sectionAnim}
       initial="hidden"
       animate="visible"
-      className="relative w-full bg-[#050D0B] py-20 overflow-hidden"
+      className="relative w-full bg-[#00150F] md:py-20 py-5 overflow-hidden"
     >
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0E2C23]/60 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-[#00150F]  pointer-events-none" />
 
       {/* ===== PROFILE SECTION ===== */}
       <div className="max-w-7xl mx-auto px-6">
-        <div className="relative rounded-2xl mt-8 bg-white/5 p-10 flex flex-col md:flex-row items-center gap-10 md:gap-30">
+        <div className="relative  rounded-2xl mt-8 bg-white/5 p-5 flex flex-col md:flex-row items-center gap-10 md:gap-30">
 
           {/* LEFT SIDE - MAIN PROFILE */}
           <motion.div
@@ -98,8 +98,8 @@ function H_Section_06() {
           </motion.div>
 
           {/* RIGHT SIDE - TEXT */}
-          <div className="text-gray-200 text-xl  font-['Anek_Telugu'] leading-relaxed max-w-2xl text-center md:text-left">
-            <p>
+          <div className="text-gray-200 text-xl font-['Montserrat_Alternates'] max-w-2xl text-center md:text-left">
+            <p >
               <span className="font-semibold text-white">
                 Chaitanya Agarwal is a SEBI registered
               </span>{" "}
@@ -112,7 +112,9 @@ function H_Section_06() {
               market complexities and empower individuals to build confidence,
               consistency, and long term success in trading.
             </p>
+            
           </div>
+          
         </div>
       </div>
 

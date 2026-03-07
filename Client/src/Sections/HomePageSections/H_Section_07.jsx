@@ -33,7 +33,7 @@ function H_Section_07() {
   };
 
   return (
-    <section className="w-full bg-gradient-to-b from-[#050D0B] to-[#092019] py-16">
+    <section className="w-full bg-[#00150F] py-16">
       
       {/* ================= REVIEWS SECTION ================= */}
       <motion.div

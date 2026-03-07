@@ -80,9 +80,7 @@ const Navbar = () => {
             />
           </div>
 
-          <h1 className="text-green-400 font-['Anek_Telugu'] mt-3 drop-shadow-[0_0_12px_rgba(34,197,94,0.6)] text-2xl font-bold tracking-tight">
-            SSANSKAR
-          </h1>
+        
         </Link>
 
      
@@ -90,9 +88,9 @@ const Navbar = () => {
         {/* HAMBURGER (VISIBLE ON ALL SCREENS) */}
         <button
           onClick={() => setOpen(true)}
-          className="text-white text-3xl hover:scale-110 transition-transform"
+          className="text-white hover:cursor-pointer text-3xl hover:scale-110 transition-transform"
         >
-          <GiHamburgerMenu />
+          <GiHamburgerMenu className="hover:text-green-400" />
         </button>
       </motion.nav>
 
