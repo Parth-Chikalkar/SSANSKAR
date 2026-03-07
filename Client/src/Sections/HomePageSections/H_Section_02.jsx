@@ -98,7 +98,7 @@ const H_Section_02 = () => {
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity }}
               src={illustration}
-              className="w-[300px] md:w-[364px] relative z-5 opacity-40"
+              className="w-[300px] md:w-[364px] relative z-5 md:top-0 -top-5 opacity-40"
             />
 
             <motion.img
