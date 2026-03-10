@@ -25,11 +25,11 @@ const services = [
     media: img3,
   },
   {
-    title: "Online & Offline Batches",
-    desc:
-      "Learn smart trading strategies through expert-led online and offline sessions designed for real market success.",
-    media: img4,
-  },
+  title: "Online & Offline Batches",
+  desc:
+    "We offer flexible online and offline batches so students can learn trading in the way that suits them best. Our expert-led sessions combine theory, live market examples, and practical guidance to help learners build strong trading skills.",
+  media: img4,
+},
   {
     title: "Live Market Sessions with Experienced Traders",
     desc:
