@@ -50,14 +50,14 @@ function H_Section_06() {
       variants={sectionAnim}
       initial="hidden"
       animate="visible"
-      className="relative w-full bg-[#00150F] md:py-20 py-5 overflow-hidden"
+      className="relative w-full bg-[#00150F]  overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-[#00150F]  pointer-events-none" />
 
       {/* ===== PROFILE SECTION ===== */}
       <div className="max-w-7xl mx-auto px-6">
-        <div className="relative  rounded-2xl mt-8 bg-white/5 p-5 flex flex-col md:flex-row items-center gap-10 md:gap-30">
+        <div className="relative  rounded-2xl mt-6 bg-white/5 p-5 flex flex-col md:flex-row items-center gap-10 md:gap-30">
 
           {/* LEFT SIDE - MAIN PROFILE */}
           <motion.div
@@ -119,7 +119,7 @@ function H_Section_06() {
       </div>
 
       {/* ===== ADVISERS GRID ===== */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 mt-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 mt-14">
         
         <motion.h2
           className="text-center text-[36px] md:text-5xl font-semibold text-white font-['Anek_Telugu']"
@@ -127,7 +127,7 @@ function H_Section_06() {
           Meet Our <span className="text-green-400">Advisers</span>
         </motion.h2>
 
-        <motion.p className="mt-4 text-center text-[19px] text-white/60 max-w-3xl mx-auto">
+        <motion.p className="mt-6 text-center text-[19px] text-white/60 max-w-3xl mx-auto">
           Our advisers bring deep market expertise and strategic insight to the academy.
           Their experience and guidance ensure that our students receive structured,
           high-quality trading education.
@@ -137,7 +137,7 @@ function H_Section_06() {
           variants={gridAnim}
           initial="hidden"
           animate="visible"
-          className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+          className="mt-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
         >
           {advisers.map((item, i) => (
             <motion.div

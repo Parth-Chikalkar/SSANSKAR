@@ -4,17 +4,17 @@ import ServicesCards from "../../Components/ServiceCards";
 
 function H_Section_03() {
   return (
-    <section className="relative w-full bg-[#050D0B] py-5 md:py-0 md:pb-24 ">
+    <section className="relative w-full bg-[#00150F] md:pb-10 py-5  ">
       
       {/* Background glow */}
-      <div className="absolute  inset-0 bg-[#00150F] pointer-events-none" />
+     
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="relative z-10 max-w-7xl mx-auto px-6 pt-10 text-center"
+        className="relative z-10 max-w-7xl mx-auto px-6 md:pt-10 text-center"
       >
         
         {/* Heading */}
@@ -37,7 +37,7 @@ function H_Section_03() {
         {/* Subtitle */}
         <motion.p
           transition={{ delay: 0.15 }}
-          className="md:mt-4 text-white/60 max-w-xl mx-auto text-[19px] md:text-base"
+          className="mt-2 text-white/60 max-w-xl mx-auto text-[19px] md:text-base"
         >
           Empowering Traders Through Structured Professional Education
         </motion.p>

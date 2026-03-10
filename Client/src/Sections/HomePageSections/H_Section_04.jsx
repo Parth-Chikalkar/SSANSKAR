@@ -56,7 +56,7 @@ function H_Section_04() {
   };
 
   return (
-    <section ref={sectionRef} className="w-full bg-[#00150F] text-white py-7 px-6">
+    <section ref={sectionRef} className="w-full bg-[#00150F] text-white py-10 px-6">
       <div className="max-w-7xl mx-auto font-['Anek_Telugu'] text-center">
         {/* SEBI Section Content */}
         <div className="relative text-center px-6">
@@ -67,7 +67,7 @@ function H_Section_04() {
             viewport={{ once: true }}
             className="relative z-20"
           >
-            <h2 className="md:text-5xl text-[36px] font-bold mb-4 leading-tight">
+            <h2 className="md:text-5xl text-[36px] font-bold mb-6 leading-tight">
               The <span className="text-green-400">SEBI</span> at a Glance
             </h2>
             <p className="text-white font-['Montserrat_Alternates'] max-w-lg font-medium mx-auto text-[20px] opacity-90 ">
@@ -77,17 +77,17 @@ function H_Section_04() {
           </motion.div>
 
           <motion.div
-            className="hidden md:block absolute h-70 opacity-15 -top-20 rounded-lg inset-0 bg-cover bg-center bg-no-repeat pointer-events-none"
+            className="hidden md:block absolute h-70 opacity-15 -top-10 rounded-lg inset-0 bg-cover bg-center bg-no-repeat pointer-events-none"
             style={{ backgroundImage: `url(${bgImage})` }}
           />
         </div>
 
-        <h3 className="md:text-5xl text-[36px] font-semibold text-green-400 mt-14 md:mt-34 mb-8">
+        <h3 className="md:text-5xl text-[36px] font-semibold text-green-400 mt-10 md:mt-25 ">
           Journey
         </h3>
 
         {/* VIDEO CARD */}
-        <motion.div className="relative rounded-3xl overflow-hidden shadow-2xl border border-green-900 group">
+        <motion.div className="relative mt-6 rounded-3xl overflow-hidden shadow-2xl border border-green-900 group">
           {isLoading && (
             <div className="absolute inset-0 flex items-center justify-center bg-black z-20">
               <div className="w-10 h-10 border-4 border-green-400 border-t-transparent rounded-full animate-spin"></div>

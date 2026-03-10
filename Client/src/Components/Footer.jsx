@@ -13,8 +13,8 @@ function Footer() {
   // Social Media Data
   const socialLinks = [
     { Icon: FaFacebookF, url: "https://www.facebook.com/joinssansta/reviews/" },
-    { Icon: FaInstagram, url: "https://www.instagram.com/ssanskar_trading_academy" },
-    { Icon: FaYoutube, url: "https://www.youtube.com/@ssanskartradingacademy7280" },
+    { Icon: FaInstagram, url: "https://www.instagram.com/agarwal_chaitanya27?igsh=Ym9pY25hNmVvd3hl" },
+    { Icon: FaYoutube, url: "https://www.youtube.com/@ssanskartradingacademy7280" },  
   ];
 
   return (

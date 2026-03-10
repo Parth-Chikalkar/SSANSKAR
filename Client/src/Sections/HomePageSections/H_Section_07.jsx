@@ -33,7 +33,7 @@ function H_Section_07() {
   };
 
   return (
-    <section className="w-full bg-[#00150F] py-16">
+    <section className="w-full bg-[#00150F] md:py-10 pt-10">
       
       {/* ================= REVIEWS SECTION ================= */}
       <motion.div
@@ -120,7 +120,7 @@ function H_Section_07() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.1 }}
-        className="max-w-6xl mx-auto px-6 mt-20"
+        className="max-w-6xl mx-auto px-6 mt-10"
       >
         <h2 className="text-center font-['Anek_Telugu'] md:text-5xl text-[36px] leading-tight  font-semibold text-white mb-8">
           Locate Our <span className="text-emerald-400">Learning Center</span> on the Map

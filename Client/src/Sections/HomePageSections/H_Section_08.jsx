@@ -33,7 +33,7 @@ subtitle: "Justdial",
     title : "SSANSKAR on",
     subtitle : "Instagram",
     img : ig,
-    link : "https://www.instagram.com/ssanskar_trading_academy"
+    link : "https://www.instagram.com/agarwal_chaitanya27?igsh=Ym9pY25hNmVvd3hl"
   },
   {
     id :5 ,
@@ -74,7 +74,7 @@ function H_Section_08() {
   };
 
   return (
-    <section className="w-full py-10  bg-[#00150F] flex flex-col justify-center items-center">
+    <section className="w-full md:py-10 py-5  bg-[#00150F] flex flex-col justify-center items-center">
 
       {/* Heading */}
       <motion.div
@@ -82,7 +82,7 @@ function H_Section_08() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="text-center mb-16 px-6"
+        className="text-center mb-6 px-6"
       >
         <h2 className=" leading-tight md:text-5xl font-['Anek_Telugu'] font-semibold text-white text-[36px]">
          Trusted and Recognized Across Leading{" "}

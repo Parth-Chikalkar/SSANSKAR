@@ -23,7 +23,7 @@ const H_Section_02 = () => {
   };
 
   return (
-    <section className="relative w-full bg-[#00150F]  pt-20  overflow-hidden">
+    <section className="relative w-full bg-[#00150F]  md:pt-15 md:pb-20 pt-5 pb-0 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
 
         {/* Heading */}
@@ -89,33 +89,33 @@ const H_Section_02 = () => {
           </div>
 
           {/* Illustration */}
-          <div className="relative flex justify-center">
+          <motion.div 
+           animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 4, repeat: Infinity }}
+          className="relative flex justify-center md:scale-97  ">
             
 
 
 
             <motion.img
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity }}
+              
               src={illustration}
-              className="w-[300px] md:w-[364px] relative z-5 md:top-0 -top-5 opacity-40"
+              className="w-[300px] md:w-[364px] md:absolute relative z-5 md:top-0 -top-5 opacity-40"
             />
 
             <motion.img
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity }}
+              
               src={illustration2}
               className="absolute w-[600px] md:w-[764px] md:right-[-55px] right-[-10px] top-50 z-15"
             />
             <motion.img
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity }}
+             
               src={illustration3}
               className="absolute w-[600px] md:w-[764px] md:right-[-40px] md:top-0 top-20 z-10 opacity-70"
             />
 
             
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

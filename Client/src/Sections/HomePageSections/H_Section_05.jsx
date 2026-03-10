@@ -84,7 +84,7 @@ const H_Section_04 = () => {
         {/* ================= MOBILE ================= */}
         <div
           ref={mobileTrackRef}
-          className="relative mt-20 md:hidden max-w-md mx-auto"
+          className="relative mt-10 md:hidden max-w-md mx-auto"
         >
           {/* Line */}
           <div className="absolute left-6 top-3 h-full w-[2px] bg-white/10" />
