@@ -74,7 +74,7 @@ function H_Section_08() {
   };
 
   return (
-    <section className="w-full py-24  bg-[#00150F] flex flex-col justify-center items-center">
+    <section className="w-full py-20  bg-[#00150F] flex flex-col justify-center items-center">
 
       {/* Heading */}
       <motion.div
@@ -84,7 +84,7 @@ function H_Section_08() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="text-center mb-16 px-6"
       >
-        <h2 className="text-4xl md:text-5xl font-['Anek_Telugu'] font-semibold text-white tracking-tight">
+        <h2 className=" leading-tight md:text-5xl font-['Anek_Telugu'] font-semibold text-white text-[36px]">
          Trusted and Recognized Across Leading{" "}
 <span className="text-emerald-400">Platforms</span>
         </h2>

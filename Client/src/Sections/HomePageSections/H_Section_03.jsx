@@ -20,8 +20,9 @@ function H_Section_03() {
         {/* Heading */}
         <motion.h2
           className="
-            text-4xl
-            md:text-6xl
+            md:text-4xl
+            text-[36px]
+            md:text-5xl
             font-semibold
             font-['Anek_Telugu']
             text-white
@@ -36,7 +37,7 @@ function H_Section_03() {
         {/* Subtitle */}
         <motion.p
           transition={{ delay: 0.15 }}
-          className="mt-4 text-white/60 max-w-xl mx-auto text-sm md:text-base"
+          className="md:mt-4 text-white/60 max-w-xl mx-auto text-[19px] md:text-base"
         >
           Empowering Traders Through Structured Professional Education
         </motion.p>

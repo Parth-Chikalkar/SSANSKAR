@@ -44,7 +44,7 @@ function H_Section_07() {
         className="max-w-7xl bg-white/5 border border-white/10 mx-auto rounded-xl p-6"
       >
         <div className="flex items-center justify-between mb-10">
-          <h2 className="text-3xl font-semibold text-white">Reviews</h2>
+          <h2 className="md:text-3xl text-[20px] font-semibold text-white">Reviews</h2>
           <button 
             onClick={() => setShowAll(true)}
             className="bg-emerald-400 text-black px-4 py-2 rounded-md text-sm font-medium hover:bg-emerald-500 transition-colors"
@@ -122,7 +122,7 @@ function H_Section_07() {
         transition={{ duration: 0.8, delay: 0.1 }}
         className="max-w-6xl mx-auto px-6 mt-20"
       >
-        <h2 className="text-center font-['Anek_Telugu'] text-4xl font-semibold text-white mb-8">
+        <h2 className="text-center font-['Anek_Telugu'] md:text-5xl text-[36px] leading-tight  font-semibold text-white mb-8">
           Locate Our <span className="text-emerald-400">Learning Center</span> on the Map
         </h2>
 

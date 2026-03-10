@@ -75,7 +75,7 @@ const H_Section_04 = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center font-['Anek_Telugu'] text-3xl md:text-5xl font-semibold text-white"
+          className="text-center font-['Anek_Telugu'] text-[36px] leading-tight w-full md:text-5xl font-semibold text-white"
         >
           Your Journey from Beginner to Confident Trader{" "}
           <span className="text-green-400">Learning Roadmap</span>

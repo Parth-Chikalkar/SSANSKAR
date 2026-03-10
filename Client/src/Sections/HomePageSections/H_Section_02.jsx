@@ -35,7 +35,7 @@ const H_Section_02 = () => {
         >
           <motion.h2
             variants={fadeUp}
-            className="font-['Anek_Telugu'] text-[42px] md:text-[48px] font-semibold leading-tight text-white"
+            className="font-['Anek_Telugu'] text-[36px] md:text-5xl font-semibold leading-tight text-white"
           >
             The Vision Behind{" "}
             <motion.span
@@ -56,7 +56,7 @@ const H_Section_02 = () => {
           <motion.p
             variants={fadeUp}
             transition={{ delay: 0.2 }}
-            className="mt-6 font-['Montserrat_Alternates'] text-white/70 text-[20px] leading-relaxed"
+            className="mt-6 font-['Montserrat_Alternates'] text-white/70 text-[19px] leading-relaxed"
           >
             SSANSKAR Trading Academy is a trusted and distinguished institute in stock market education. With over 1,000 successful students, we focus on developing skilled, confident, and disciplined traders through practical, real-market learning. Our mission is to empower students with the right knowledge, confidence, and disciplined approach to succeed in the stock market.
           </motion.p>
@@ -73,11 +73,11 @@ const H_Section_02 = () => {
               className="absolute left-0 top-0 w-[2px] bg-green-400 rounded-full shadow-[0_0_12px_rgba(74,222,128,0.8)]"
             />
 
-            <h3 className="font-['Anek_Telugu'] text-[50px] font-semibold text-white">
+            <h3 className="font-['Anek_Telugu'] text-[36px] mt-3 md:mt-0 md:text-5xl font-semibold text-white">
               <span className="text-green-400">Skills</span> We Focus On
             </h3>
 
-           <ul className="mt-8 space-y-6 font-['Montserrat_Alternates'] text-white/80 text-[20px]">
+           <ul className="mt-8 space-y-6 font-['Montserrat_Alternates'] text-white/80 text-[19px]">
   <li>Stock Market Structure & System Analysis</li>
   <li>Investment & Swing Trading Strategies</li>
   <li>Pure Price Action Chart Analysis</li>

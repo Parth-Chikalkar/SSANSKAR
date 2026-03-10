@@ -122,12 +122,12 @@ function H_Section_06() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 mt-20">
         
         <motion.h2
-          className="text-center text-3xl md:text-5xl font-semibold text-white font-['Anek_Telugu']"
+          className="text-center text-[36px] md:text-5xl font-semibold text-white font-['Anek_Telugu']"
         >
           Meet Our <span className="text-green-400">Advisers</span>
         </motion.h2>
 
-        <motion.p className="mt-4 text-center text-white/60 max-w-3xl mx-auto">
+        <motion.p className="mt-4 text-center text-[19px] text-white/60 max-w-3xl mx-auto">
           Our advisers bring deep market expertise and strategic insight to the academy.
           Their experience and guidance ensure that our students receive structured,
           high-quality trading education.

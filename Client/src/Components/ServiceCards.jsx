@@ -43,7 +43,7 @@ function ServicesCards() {
           <img
             src={item.media}
             alt={item.title}
-            className="h-[140px] mx-auto mb-6 object-contain"
+            className="h-[140px] mx-auto md:mb-5 object-contain"
           />
 
           {/* Title */}

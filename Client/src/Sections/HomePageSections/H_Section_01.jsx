@@ -19,7 +19,7 @@ const textVariant = {
 const H_Section_01 = () => {
   const sectionRef = useRef(null);
 
-    const phoneNumber = "9108668438665"; // Without + and spaces
+    const phoneNumber = "9108668438665"; 
  const message = "Hello SSANSKAR Academy I found your academy through your website and would like to request more information about your trading academy";
    const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
@@ -38,7 +38,7 @@ const H_Section_01 = () => {
       ref={sectionRef}
 className="relative min-h-screen bg-[#00150F] overflow-hidden"
 style={{
-  backgroundImage: `url("https://res.cloudinary.com/dr8poybri/image/upload/f_auto,q_auto/v1772917248/homeBg_agdln8.jpg")`,
+  backgroundImage: `url("https://res.cloudinary.com/dr8poybri/image/upload/v1772917248/homeBg_agdln8.jpg")`,
   backgroundSize: "cover",
   backgroundPosition: "top",
 
@@ -57,7 +57,7 @@ style={{
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="font-['Anek_Telugu'] font-semibold tracking-[-0.5px] leading-tight text-[33px] sm:text-[44px] md:text-[52px] lg:text-[60px]"
+            className="font-['Anek_Telugu'] font-semibold tracking-[-0.5px] leading-tight text-[36px] md:text-6xl "
           >
             <span className="block">“Where Trading Meets</span>
             <span className="block">
@@ -75,11 +75,9 @@ style={{
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-6 text-white/70 max-w-xl mx-auto md:mx-0 sm:text-base leading-relaxed"
+            className="mt-6 text-white/70 max-w-xl mx-auto md:mx-0 text-[20px]  md:leading-relaxed"
           >
-            Struggling to understand market movements? SSANSKAR provides structured 
-            trading education, expert insights, and easy-to-follow lessons tailored 
-            for learners at every level.
+            Struggling to understand market movements ? SSANSKAR offers structured trading education, expert insights, and easy to follow lessons designed for all levels. Learn how markets work and improve your decision-making step by step !
           </motion.p>
 
           {/* BUTTON */}
@@ -118,9 +116,9 @@ style={{
   <motion.img
     src={mobileImg}
     alt="Mobile Trading"
-    animate={{ y: [0, -18, 0] }}
-    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-    className="absolute top-10  md:top-16   w-[500px] sm:w-[250px] md:w-[500px]  z-20 drop-shadow-[0_0_40px_rgba(34,197,94,0.35)]"
+    animate={{ y: [0, -12, 0] }}
+    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+    className="absolute top-10  md:top-16  w-[500px] sm:w-[250px] md:w-[500px]  z-20 drop-shadow-[0_0_40px_rgba(34,197,94,0.35)]"
   />
 </motion.div>
       </div>

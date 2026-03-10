@@ -80,10 +80,10 @@ function Footer() {
 <li className="flex items-start gap-4 group">
   <FaEnvelope className="text-emerald-400 text-lg mt-1 transition-transform group-hover:scale-110" />
   <a 
-    href="mailto:koshafabricartistry9@gmail.com" 
+    href="mailto:ssanskaracademy@gmail.com" 
     className="hover:text-emerald-400 transition-colors duration-300 break-all"
   >
-    koshafabricartistry9@gmail.com
+    ssanskaracademy@gmail.com
   </a>
 </li>
 
