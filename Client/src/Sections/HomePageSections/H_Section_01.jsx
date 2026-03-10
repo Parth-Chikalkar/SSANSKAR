@@ -57,7 +57,7 @@ style={{
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="font-['Anek_Telugu'] font-semibold tracking-[-0.5px] leading-tight text-[36px] md:text-6xl "
+            className="font-['Anek_Telugu'] font-semibold tracking-[-0.5px] leading-tight text-[35px] md:text-6xl "
           >
             <span className="block">“Where Trading Meets</span>
             <span className="block">
@@ -75,7 +75,7 @@ style={{
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-6 text-white/70 max-w-xl mx-auto md:mx-0 text-[20px]  md:leading-relaxed"
+            className="mt-6 text-white/70 max-w-xl mx-auto md:mx-0 text-[19px]  md:leading-relaxed"
           >
             Struggling to understand market movements ? SSANSKAR offers structured trading education, expert insights, and easy to follow lessons designed for all levels. Learn how markets work and improve your decision-making step by step !
           </motion.p>
