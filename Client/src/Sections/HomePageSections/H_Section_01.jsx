@@ -20,7 +20,7 @@ const H_Section_01 = () => {
   const sectionRef = useRef(null);
 
     const phoneNumber = "9108668438665"; 
- const message = "Hello SSANSKAR Academy I found your academy through your website and would like to request more information about your trading academy";
+ const message = "Hello SSANSKAR Academy I found your academy through your website and would like to request more information about your trading academy.";
    const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");

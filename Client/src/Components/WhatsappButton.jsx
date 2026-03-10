@@ -2,7 +2,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsappButton = () => {
   const phoneNumber = "9108668438665"; // Without + and spaces
-  const message = "Hello SSANSKAR Academy, I would like to inquire about trading Academy.";
+  const message = "Hello SSANSKAR Academy I found your academy through your website and would like to request more information about your trading academy.";
 
   const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
