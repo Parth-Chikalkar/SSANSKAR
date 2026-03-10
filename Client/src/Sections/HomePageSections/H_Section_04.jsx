@@ -56,7 +56,7 @@ function H_Section_04() {
   };
 
   return (
-    <section ref={sectionRef} className="w-full bg-[#00150F] text-white py-16 px-6">
+    <section ref={sectionRef} className="w-full bg-[#00150F] text-white py-7 px-6">
       <div className="max-w-7xl mx-auto font-['Anek_Telugu'] text-center">
         {/* SEBI Section Content */}
         <div className="relative text-center px-6">
@@ -67,7 +67,7 @@ function H_Section_04() {
             viewport={{ once: true }}
             className="relative z-20"
           >
-            <h2 className="md:text-5xl text-[36px] font-bold mb-4">
+            <h2 className="md:text-5xl text-[36px] font-bold mb-4 leading-tight">
               The <span className="text-green-400">SEBI</span> at a Glance
             </h2>
             <p className="text-white font-['Montserrat_Alternates'] max-w-lg font-medium mx-auto text-[20px] opacity-90 ">
@@ -82,7 +82,7 @@ function H_Section_04() {
           />
         </div>
 
-        <h3 className="md:text-5xl text-[36px] font-semibold text-green-400 mt-15 md:mt-34 mb-8">
+        <h3 className="md:text-5xl text-[36px] font-semibold text-green-400 mt-14 md:mt-34 mb-8">
           Journey
         </h3>
 

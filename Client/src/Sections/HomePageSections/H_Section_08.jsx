@@ -74,7 +74,7 @@ function H_Section_08() {
   };
 
   return (
-    <section className="w-full py-20  bg-[#00150F] flex flex-col justify-center items-center">
+    <section className="w-full py-10  bg-[#00150F] flex flex-col justify-center items-center">
 
       {/* Heading */}
       <motion.div

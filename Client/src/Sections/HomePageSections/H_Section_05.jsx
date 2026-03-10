@@ -63,7 +63,7 @@ const H_Section_04 = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-[#00150F] py-20 md:h-screen"
+      className="relative w-full bg-[#00150F] py-10 md:h-screen"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-[#00150F]" />

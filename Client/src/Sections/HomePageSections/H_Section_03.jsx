@@ -4,7 +4,7 @@ import ServicesCards from "../../Components/ServiceCards";
 
 function H_Section_03() {
   return (
-    <section className="relative w-full bg-[#050D0B] py-10 md:py-0 md:pb-24 ">
+    <section className="relative w-full bg-[#050D0B] py-5 md:py-0 md:pb-24 ">
       
       {/* Background glow */}
       <div className="absolute  inset-0 bg-[#00150F] pointer-events-none" />
