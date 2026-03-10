@@ -25,9 +25,9 @@ const services = [
     media: img3,
   },
   {
-    title: "No Education, Age, or Language Barriers",
+    title: "Online & Offline Batches",
     desc:
-      "Our courses are designed to be inclusive and accessible, making stock market education easy to understand for individuals of all ages, educational backgrounds, and language preferences.",
+      "Learn smart trading strategies through expert-led online and offline sessions designed for real market success.",
     media: img4,
   },
   {
