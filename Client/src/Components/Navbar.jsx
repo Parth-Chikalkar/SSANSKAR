@@ -11,7 +11,7 @@ const navItems = [
   { name: "Services", link: "services" },
   { name: "SEBI", link: "sebi" },
   { name: "Roadmap", link: "roadmap" },
-  { name: "Advisers", link: "mentors" },
+  { name: "Mentors", link: "mentors" },
   { name: "Reviews", link: "reviews" },
   { name: "Platforms", link: "platforms" },
   { name: "Contact", link: "contact" },
