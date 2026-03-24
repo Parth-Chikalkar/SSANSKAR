@@ -100,7 +100,7 @@ const H_Section_02 = () => {
             <motion.img
               
               src={illustration}
-              className="w-[300px] md:w-[364px] md:absolute relative z-5 md:top-0 -top-5 opacity-40"
+              className="w-[300px] md:w-[364px] md:absolute relative z-5 -top-5 opacity-40"
             />
 
             <motion.img
@@ -111,7 +111,7 @@ const H_Section_02 = () => {
             <motion.img
              
               src={illustration3}
-              className="absolute w-[600px] md:w-[764px] md:right-[-40px] md:top-0 top-20 z-10 opacity-70"
+              className="absolute w-[600px] md:w-[764px] md:right-[-40px] md:top-0 top-10 z-10 opacity-70"
             />
 
             
