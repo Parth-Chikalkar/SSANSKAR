@@ -45,29 +45,31 @@ style={{
 }}    >
     
    
-      <div className="relative z-10 max-w-7xl md:mt-7 mx-auto mt-16 px-5 pt-28 md:pt-35 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+      <div className="relative z-10 max-w-7xl md:mt-7 mx-auto mt-16 px-5 pt-28 md:pt-35 grid grid-cols-1 md:grid-cols-2 gap- items-center">
 
        
 
         {/* TEXT */}
-        <div className="text-white text-center md:text-left">
-          <motion.h1
-            custom={0}
-            variants={textVariant}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="font-['Anek_Telugu'] font-semibold tracking-[-0.5px] leading-tight text-[35px] md:text-6xl "
-          >
-            <span className="block">“Where Trading Meets</span>
-            <span className="block">
-              Excellence,{" "}
-              <span className="text-green-400 drop-shadow-[0_0_12px_rgba(34,197,94,0.6)]">
-                SSANSKAR
-              </span>
-              ”
-            </span>
-          </motion.h1>
+        <div className="text-white text-center w-full bg-red-0 md:text-left">
+         <motion.h1
+  custom={0}
+  variants={textVariant}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  className="font-['Anek_Telugu'] font-semibold tracking-[-0.5px] leading-tight text-[35px] lg:text-6xl"
+>
+  <span className="block whitespace-nowrap">
+    Where Trading Meets
+  </span>
+
+  <span className="block whitespace-nowrap">
+    Excellence,{" "}
+    <span className="text-green-400 drop-shadow-[0_0_12px_rgba(34,197,94,0.6)]">
+      SSANSKAR
+    </span>
+  </span>
+</motion.h1>
 
           <motion.p
             custom={1}

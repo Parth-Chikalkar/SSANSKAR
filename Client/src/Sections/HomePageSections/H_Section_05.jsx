@@ -84,7 +84,7 @@ const H_Section_04 = () => {
         {/* ================= MOBILE ================= */}
         <div
           ref={mobileTrackRef}
-          className="relative mt-10 md:hidden max-w-md mx-auto"
+          className="relative mt-10 lg:hidden max-w-md mx-auto"
         >
           {/* Line */}
           <div className="absolute left-6 top-3 h-full w-[2px] bg-white/10" />
@@ -136,7 +136,7 @@ const H_Section_04 = () => {
         </div>
 
         {/* ================= DESKTOP (ORIGINAL BEHAVIOR) ================= */}
-        <div className="hidden md:block relative py-60">
+        <div className="hidden lg:block relative px-20 py-60">
           {/* Base line */}
           <div className="absolute top-1/2 left-0 w-full h-px bg-white/10" />
 
