@@ -8,7 +8,7 @@ import a4 from "../../assets/Advisers/a4.png";
 import a5 from "../../assets/Advisers/a5.png";
 import a6 from "../../assets/Advisers/a6.png";
 import a7 from "../../assets/Advisers/a7.png";
-
+import a8 from "../../assets/Advisers/a8.png";
 
 const advisers = [
   { name: "Aarya Ghalsasi", role: "Sanskar Faculty", img: a1 },
@@ -126,8 +126,8 @@ function H_Section_06() {
           >
             <div className="relative h-80 overflow-hidden rounded-xl">
               <motion.img
-                src={a2}
-                alt="Nikhil Singri"
+                src={a8}
+                alt="Chaitanya Agarwal"
                 className="w-full h-full object-contain"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.4 }}
@@ -136,10 +136,10 @@ function H_Section_06() {
 
             <div className="absolute left-6 right-6 bottom-6 bg-white/80 rounded-xl text-center py-2">
               <h4 className="font-semibold text-[#0E2C23]">
-                Nikhil Singri
+                Prachi Agarwal 
               </h4>
               <p className="text-sm text-[#0E2C23]/70">
-                Stock Market Educator
+                Managing Head
               </p>
             </div>
 
@@ -159,16 +159,69 @@ function H_Section_06() {
           <div className="text-gray-200 text-xl font-['Montserrat_Alternates'] max-w-2xl text-center md:text-left">
             <p>
               <span className="font-semibold text-white">
-                Nikhil Singri
+                Prachi Agarwal serves as the Managing Head
               </span>{" "}
-               is a stock market educator recognized for his
-              ability to simplify complex financial concepts for learners. At
-              Sanskar Trading Academy, he focuses on helping students understand
-              investing principles, trading strategies, and market psychology.
-              With a practical and structured approach, he aims to guide
-              individuals toward making informed market decisions while building
-              confidence, discipline, and long-term consistency in their trading
-              journey
+              , bringing over five
+              years of dedicated leadership and hands-on experience in handling
+              key responsibilities. With a strong focus on operational
+              excellence and team coordination, she has consistently contributed
+              to the growth and efficiency of the organization. Known for her
+              commitment, strategic thinking, and ability to manage complex
+              tasks with ease, Prachi plays a vital role in driving daily
+              operations and ensuring smooth workflow across departments. Her
+              proactive approach and leadership skills make her an integral part
+              of the organization’s success.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="relative  rounded-2xl mt-6 bg-white/5 p-5 flex flex-col md:flex-row items-center gap-10 md:gap-30">
+          {/* LEFT SIDE - MAIN PROFILE */}
+          <motion.div
+            variants={cardAnim}
+            whileHover={{ y: -10, rotateY: 6, rotateX: -4 }}
+            transition={{ type: "spring", stiffness: 140 }}
+            className="relative rounded-2xl bg-[#143024] p-6 border border-transparent w-full hover:border-green-400 hover:shadow-xl"
+          >
+            <div className="relative h-80 overflow-hidden rounded-xl">
+              <motion.img
+                src={a2}
+                alt="Nikhil Singri"
+                className="w-full h-full object-contain"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.4 }}
+              />
+            </div>
+
+            <div className="absolute left-6 right-6 bottom-6 bg-white/80 rounded-xl text-center py-2">
+              <h4 className="font-semibold text-[#0E2C23]">Nikhil Singri</h4>
+              <p className="text-sm text-[#0E2C23]/70">Stock Market Educator</p>
+            </div>
+
+            {/* Floating effect */}
+            <motion.div
+              className="absolute inset-0 pointer-events-none hidden md:block"
+              animate={{ y: [0, -6, 0] }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
+          </motion.div>
+
+          {/* RIGHT SIDE - TEXT */}
+          <div className="text-gray-200 text-xl font-['Montserrat_Alternates'] max-w-2xl text-center md:text-left">
+            <p>
+              <span className="font-semibold text-white">Nikhil Singri</span> is
+              a stock market educator recognized for his ability to simplify
+              complex financial concepts for learners. At Sanskar Trading
+              Academy, he focuses on helping students understand investing
+              principles, trading strategies, and market psychology. With a
+              practical and structured approach, he aims to guide individuals
+              toward making informed market decisions while building confidence,
+              discipline, and long-term consistency in their trading journey
             </p>
           </div>
         </div>
